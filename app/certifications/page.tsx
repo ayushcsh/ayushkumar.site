@@ -11,11 +11,11 @@ import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
   title: "Certifications | Ayush Kumar",
-  metadataBase: new URL("https://ayushkumar.com/certifications"),
+  metadataBase: new URL("https://ayushkumar.site/certifications"),
   description: "Explore certifications and badges earned by Ayush Kumar",
   openGraph: {
     title: "Certifications | Ayush Kumar",
-    url: "https://ayushkumar.com/certifications",
+    url: "https://ayushkumar.site/certifications",
     description: "Explore certifications and badges earned by Ayush Kumar",
     images:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=90",

@@ -15,7 +15,7 @@ export default function RefLink({
 }) {
   return (
     <Link
-      href={href + "?ref=ayushkumar.com"}
+      href={href + "?ref=ayushkumar.site"}
       rel="noopener"
       target={target}
       className={className}

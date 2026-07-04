@@ -28,13 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${certification.name} | Certificate`,
-    metadataBase: new URL(`https://ayushkumar.com/certifications/${certification.slug}`),
+    metadataBase: new URL(`https://ayushkumar.site/certifications/${certification.slug}`),
     description: certification.tagline,
     openGraph: {
       images: certification.coverImage
         ? urlFor(certification.coverImage.image).width(1200).height(630).url()
         : fallbackImage,
-      url: `https://ayushkumar.com/certifications/${certification.slug}`,
+      url: `https://ayushkumar.site/certifications/${certification.slug}`,
       title: certification.name,
       description: certification.tagline,
     },

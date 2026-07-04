@@ -7,11 +7,11 @@ import PageHeading from "@/app/components/shared/PageHeading";
 
 export const metadata: Metadata = {
   title: "Blog | Ayush Kumar",
-  metadataBase: new URL("https://ayushkumar.com/blog"),
+  metadataBase: new URL("https://ayushkumar.site/blog"),
   description: "Read latest stories from Ayush Kumar's Blog",
   openGraph: {
     title: "Blog | Ayush Kumar",
-    url: "https://ayushkumar.com/blog",
+    url: "https://ayushkumar.site/blog",
     description: "Read latest stories from Ayush Kumar's Blog",
     images:
       "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=90",

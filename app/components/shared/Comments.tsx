@@ -20,7 +20,7 @@ export default function Comments() {
   return (
     <Giscus
       id="comments"
-      repo="ayushcsh/ayushkumar.com"
+      repo="ayushcsh/ayushkumar.site"
       repoId={giscusRepoId}
       category="Announcements"
       categoryId={giscusCategoryId}

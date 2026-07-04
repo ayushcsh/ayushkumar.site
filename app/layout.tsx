@@ -20,7 +20,7 @@ const options = {
   title: "Ayush Kumar | Software Developer",
   description:
     "Ayush Kumar is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://ayushkumar.com",
+  url: "https://ayushkumar.site",
   ogImage:
     "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=90",
 };
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "ayushkumar.com",
+    siteName: "ayushkumar.site",
     locale: "en-US",
     type: "website",
     description: options.description,

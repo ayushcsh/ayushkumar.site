@@ -7,6 +7,7 @@ import { BiHeart, BiSolidHeart } from "react-icons/bi";
 const likedKey = "ayush-contact-liked";
 const viewCountKey = "ayush-contact-view-count";
 const sessionViewKey = "ayush-contact-session-viewed";
+const viewIncrement = 5;
 
 export default function ContactEngagement() {
   const [liked, setLiked] = useState(false);
@@ -18,7 +19,9 @@ export default function ContactEngagement() {
     const savedLiked = window.localStorage.getItem(likedKey) === "true";
     const savedViews = Number(window.localStorage.getItem(viewCountKey) ?? 0);
     const shouldCountView = !window.sessionStorage.getItem(sessionViewKey);
-    const nextViews = shouldCountView ? savedViews + 1 : savedViews;
+    const nextViews = shouldCountView
+      ? savedViews + viewIncrement
+      : savedViews;
 
     if (shouldCountView) {
       window.localStorage.setItem(viewCountKey, String(nextViews));
