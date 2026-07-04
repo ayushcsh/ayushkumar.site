@@ -4,11 +4,8 @@ const fishAudioReferenceId = process.env.FISH_AUDIO_REFERENCE_ID;
 
 function cleanTextForSpeech(text: string) {
   return text
-    .replace(/https?:\/\/\S+/g, "link")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-    .replace(/`{1,3}([^`]+)`{1,3}/g, "$1")
-    .replace(/[*_~#>`-]+/g, " ")
     .replace(/\s+/g, " ")
+    .replace(/https?:\/\/\S+/g, "link")
     .trim()
     .slice(0, 1200);
 }
