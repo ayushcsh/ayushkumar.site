@@ -13,3 +13,27 @@
  GET /icon.png 200 in 3084ms
  ○ Compiling / ...
  ✓ Compiled / in 23.2s (1766 modules)
+ ✓ Compiled in 2.8s (622 modules)
+ GET / 200 in 27185ms
+ ○ Compiling /icon.png ...
+ ✓ Compiled /icon.png in 11.8s (1145 modules)
+ ✓ Compiled (1174 modules)
+ GET /icon.png?a0545bd6fd9d16b0 200 in 13604ms
+ GET /api/leetcode 200 in 13999ms
+ GET /api/github-contributions?range=rolling 200 in 14322ms
+ GET /api/github-contributions?range=rolling 200 in 41ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 9.8s (1883 modules)
+ ○ Compiling /api/chat ...
+ ✓ Compiled /api/chat in 36.3s (3148 modules)
+ POST /api/chat 200 in 41939ms
+ ○ Compiling /api/chat/voice ...
+ ✓ Compiled /api/chat/voice in 1386ms (2464 modules)
+ POST /api/chat/voice 200 in 9187ms
+ ○ Compiling /icon.png ...
+ ✓ Compiled /icon.png in 1424ms (2492 modules)
+ GET /icon.png?a0545bd6fd9d16b0 200 in 2090ms
+ POST /api/chat 200 in 2123ms
+ POST /api/chat 200 in 1953ms
+ ✓ Compiled in 5.5s (3093 modules)
+ ✓ Compiled in 1712ms (1843 modules)
