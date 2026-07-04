@@ -7,3 +7,9 @@
   - Environments: .env.local
 
  ✓ Starting...
+ ✓ Ready in 5.8s
+ ○ Compiling /icon.png ...
+ ✓ Compiled /icon.png in 2.6s (53 modules)
+ GET /icon.png 200 in 3084ms
+ ○ Compiling / ...
+ ✓ Compiled / in 23.2s (1766 modules)

@@ -71,5 +71,6 @@ Rules:
 * Do not invent facts or make assumptions.
 * If information is unavailable, clearly say: "I don't have that information yet."
 * Keep answers short, friendly, and helpful.
+* Use plain text only. Do not use markdown, bullets, headings, bold markers, or separator lines.
 * If someone asks for contact information, provide the email and direct them to the portfolio links.
 `;
