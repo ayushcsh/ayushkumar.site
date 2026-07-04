@@ -204,17 +204,6 @@ export default function PortfolioChatbot() {
         <div className="mb-3 flex h-[520px] w-[min(calc(100vw-2.5rem),380px)] flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white/95 shadow-2xl shadow-zinc-950/10 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/95 dark:shadow-zinc-950/30">
           <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
             <div className="flex items-center gap-3">
-              <span className="relative h-10 w-10 overflow-hidden rounded-full bg-zinc-900 ring-1 ring-zinc-200 dark:ring-zinc-800">
-                <Image
-                  src={avatarSrc}
-                  alt=""
-                  width={80}
-                  height={80}
-                  className="h-full w-full object-cover"
-                  priority
-                  onError={() => setAvatarSrc(fallbackAvatarSrc)}
-                />
-              </span>
               <div>
                 <h2 className="font-incognito text-base font-bold tracking-tight text-zinc-900 dark:text-white">
                   Ayush Assistant
@@ -340,8 +329,10 @@ export default function PortfolioChatbot() {
       <button
         type="button"
         onClick={() => setIsOpen((currentValue) => !currentValue)}
-        className={`relative grid h-16 w-16 place-items-center rounded-full bg-zinc-950 text-zinc-950 shadow-xl shadow-zinc-950/20 transition hover:scale-105 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 focus:ring-offset-white dark:bg-zinc-900 dark:shadow-zinc-950/40 dark:focus:ring-offset-zinc-900 ${
-          isOpen ? "" : "chatbot-avatar-button"
+        className={`chatbot-launcher relative grid h-16 w-16 place-items-center rounded-full transition duration-300 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-color/55 focus-visible:ring-offset-2 focus-visible:ring-offset-white active:scale-95 dark:focus-visible:ring-offset-zinc-950 ${
+          isOpen
+            ? "bg-zinc-950 text-white shadow-lg shadow-zinc-950/20 dark:bg-zinc-900"
+            : "bg-transparent text-zinc-950 shadow-none chatbot-avatar-button"
         }`}
         aria-label={isOpen ? "Close chat" : "Open chat"}
       >
@@ -354,7 +345,7 @@ export default function PortfolioChatbot() {
                 <span className="chatbot-wave">Hello!</span>
               </span>
             ) : null}
-            <span className="relative h-[58px] w-[58px] overflow-hidden rounded-full bg-zinc-900 ring-2 ring-white/80 dark:ring-zinc-700">
+            <span className="relative h-[58px] w-[58px] overflow-hidden rounded-full border border-zinc-200 bg-zinc-900 shadow-lg shadow-zinc-950/15 dark:border-zinc-700 dark:shadow-zinc-950/40">
               <Image
                 src={avatarSrc}
                 alt=""
