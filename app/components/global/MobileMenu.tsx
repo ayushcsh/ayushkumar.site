@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import ThemeLogo from "./ThemeLogo";
 import {
   HiBeaker,
   HiBadgeCheck,
@@ -75,7 +75,7 @@ export default function MobileMenu() {
       >
         <div className="flex items-center justify-between mt-6 px-8">
           <Link href="/" onClick={onToggleNav}>
-            <Image src="/logo.png" width={42} height={42} alt="logo" priority className="h-10 w-10 rounded-md object-cover" />
+            <ThemeLogo />
           </Link>
 
           <button

@@ -201,8 +201,8 @@ export default function PortfolioChatbot() {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end">
       {isOpen ? (
-        <div className="mb-3 flex h-[520px] w-[min(calc(100vw-2.5rem),380px)] flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white/95 shadow-2xl shadow-zinc-950/10 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/95 dark:shadow-zinc-950/30">
-          <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
+        <div className="mb-3 flex h-[520px] w-[min(calc(100vw-2.5rem),380px)] flex-col overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/85 shadow-2xl shadow-zinc-950/10 backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-950/95 dark:shadow-zinc-950/30">
+          <div className="flex items-center justify-between border-b border-zinc-200/75 bg-white/45 px-4 py-3 backdrop-blur dark:border-zinc-800 dark:bg-transparent">
             <div className="flex items-center gap-3">
               <div>
                 <h2 className="font-incognito text-base font-bold tracking-tight text-zinc-900 dark:text-white">
@@ -248,7 +248,7 @@ export default function PortfolioChatbot() {
                     className={`rounded-2xl px-3 py-2 text-sm leading-relaxed ${
                       message.role === "user"
                         ? "bg-primary-color text-zinc-950"
-                        : "border border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-zinc-800 dark:bg-primary-bg dark:text-zinc-200"
+                        : "border border-zinc-200/75 bg-white/55 text-zinc-700 shadow-sm shadow-zinc-950/[0.03] backdrop-blur dark:border-zinc-800 dark:bg-primary-bg dark:text-zinc-200"
                     }`}
                   >
                     {renderMessageContent(message.content)}
@@ -286,7 +286,7 @@ export default function PortfolioChatbot() {
 
             {isLoading ? (
               <div className="flex justify-start">
-                <div className="flex items-center gap-1 rounded-2xl border border-zinc-200 bg-zinc-50 px-3 py-3 dark:border-zinc-800 dark:bg-primary-bg">
+                <div className="flex items-center gap-1 rounded-2xl border border-zinc-200/75 bg-white/55 px-3 py-3 shadow-sm shadow-zinc-950/[0.03] backdrop-blur dark:border-zinc-800 dark:bg-primary-bg">
                   <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-zinc-400 [animation-delay:-0.2s]" />
                   <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-zinc-400 [animation-delay:-0.1s]" />
                   <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-zinc-400" />
@@ -299,7 +299,7 @@ export default function PortfolioChatbot() {
 
           <form
             onSubmit={sendMessage}
-            className="flex items-end gap-2 border-t border-zinc-200 p-3 dark:border-zinc-800"
+            className="flex items-end gap-2 border-t border-zinc-200/75 bg-white/35 p-3 backdrop-blur dark:border-zinc-800 dark:bg-transparent"
           >
             <textarea
               value={input}
@@ -312,7 +312,7 @@ export default function PortfolioChatbot() {
               }}
               rows={1}
               placeholder="Ask about Ayush..."
-              className="max-h-28 min-h-10 flex-1 resize-none rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm outline-none transition placeholder:text-zinc-400 focus:border-primary-color focus:bg-white dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:focus:border-primary-color dark:focus:bg-zinc-950"
+              className="max-h-28 min-h-10 flex-1 resize-none rounded-xl border border-zinc-200/80 bg-white/60 px-3 py-2 text-sm outline-none backdrop-blur transition placeholder:text-zinc-400 focus:border-primary-color focus:bg-white/85 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:focus:border-primary-color dark:focus:bg-zinc-950"
             />
             <button
               type="submit"

@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import Theme from "./Theme";
 import UnmountStudio from "./Unmount";
 import MobileMenu from "./MobileMenu";
+import ThemeLogo from "./ThemeLogo";
 
 export default function Navbar() {
   const data = [
@@ -37,7 +37,7 @@ export default function Navbar() {
       <header className="text-sm py-6 md:px-16 px-6 border-b dark:border-zinc-800 border-zinc-200 z-30 md:mb-28 mb-10">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <Link href="/">
-            <Image src="/logo.png" width={42} height={42} alt="logo" priority className="h-10 w-10 rounded-md object-cover" />
+            <ThemeLogo />
           </Link>
 
           <nav className="md:block hidden">
