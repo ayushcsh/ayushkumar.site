@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="28" fill="#030303"/>
+  <path d="M22 143L35 135M28.5 154.5L28.5 123.5M17.5 129.5L39.5 151.5M17.5 151.5L39.5 129.5" stroke="white" stroke-width="7" stroke-linecap="square"/>
+  <path d="M164 57L177 49M170.5 68.5L170.5 37.5M159.5 43.5L181.5 65.5M159.5 65.5L181.5 43.5" stroke="white" stroke-width="7" stroke-linecap="square"/>
+  <text x="101" y="133" fill="white" font-family="Arial Black, Impact, sans-serif" font-size="78" font-weight="900" text-anchor="middle" letter-spacing="-9">YU</text>
+</svg>

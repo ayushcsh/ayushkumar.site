@@ -16,6 +16,7 @@
     "@sanity/vision": "^3.19.3",
     "autoprefixer": "10.4.15",
     "chess.js": "^1.4.0",
+    "date-fns": "^4.4.0",
     "eslint": "^8.45.0",
     "eslint-config-next": "^14.0.4",
     "framer-motion": "^10.16.0",
